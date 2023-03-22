@@ -10,7 +10,7 @@ import { Skill } from '../model/skill';
 export class SkillService {
 
   //URL = 'http://localhost:8080/skill/';
-  URL = 'https://frontendprueba-fefcf.web.app/skill/';
+  URL = 'https://backendjlc.onrender.com/skill/';
   
   constructor(private httpClient: HttpClient) { }
 
