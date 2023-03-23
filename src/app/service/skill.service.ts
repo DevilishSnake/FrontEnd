@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 //import { environment } from 'src/environments/environment';
 import { Skill } from '../model/skill';
 
@@ -10,8 +11,10 @@ import { Skill } from '../model/skill';
 export class SkillService {
 
   //URL = 'http://localhost:8080/skill/';
-  URL = 'https://backendjlc.onrender.com/skill/';
+  //URL = 'https://backendjlc.onrender.com/skill/';
   
+  URL = environment.URL + 'skill/';
+
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Skill[]>{
